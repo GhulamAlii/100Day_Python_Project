@@ -22,7 +22,7 @@ opt = {
 
 def calc():
 
-    num1 = int(input("enter the number"))
+    num1 = eval(input("enter the number"))
     end = False
     while not end:
 
@@ -34,7 +34,7 @@ def calc():
             print(symbol)
 
         operation = input("what action you want")
-        num2 = int(input("enter the number"))
+        num2 = eval(input("enter the number"))
         action = opt[operation]
 
         ans=(action(num1,num2))
